@@ -13,7 +13,6 @@ last_update_id = 0
 def get_updates():
     url = URL + 'getupdates'
     response = requests.get(url)
-    print(response.json)
     return response.json()
 
 
